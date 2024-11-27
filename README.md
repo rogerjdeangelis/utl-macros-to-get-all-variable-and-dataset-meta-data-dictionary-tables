@@ -96,7 +96,7 @@ Macros to get all variable and dataset meta data dictionary tables
     /*                                                         |                                 |                              */
     /* SASHELP.VCOLUMN SAS SASHELP.CLASS COLUMN SEX            |%utl_getColumn(sashelp,class,sex)|  MACRO VARIABLES             */
     /* =============================================           |                                 |                              */
-    /*                                                         |                                 |  _MEMNAME                    */
+    /*                                                         |                                 |  _MEMNAME  = CLASS           */
     /* Variable         Typ    Value        Label              |                                 |  _NAME     = SEX             */
     /*                                                         |                                 |  _TYPE     = CHAR            */
     /* LIBNAME           C8    SASHELP   Library Name          |                                 |  _LENGTH   = 1               */
@@ -212,7 +212,7 @@ Macros to get all variable and dataset meta data dictionary tables
 
     */
 
-    /*--- testing run the code below before running the macro ---*/
+    /*--- optional for  testing and reruning the code below before running the macro ---*/
 
     /*---  just for testing ---*/
     %utl_close; /*-- helps if accidentally macro opened sas dataset ---*/
@@ -254,7 +254,7 @@ Macros to get all variable and dataset meta data dictionary tables
       num_numeric    _num_numeric
      ;
 
-    /*----
+    /*---- just to check
     WARNING: Attempt to delete macro variable LIBNAME failed. Variable not found.
     WARNING: Attempt to delete macro variable _LIBNAME failed. Variable not found.
     WARNING: Attempt to delete macro variable MEMNAME failed. Variable not found.
@@ -676,7 +676,7 @@ Macros to get all variable and dataset meta data dictionary tables
     /*                                                                                                                        */
     /* OUTPUT MACRO VARIABLES                                                                                                 */
     /*                                                                                                                        */
-    /*    _MEMNAME                                                                                                            */
+    /*    _MEMNAME  = CLASS                                                                                                   */
     /*    _NAME     = SEX                                                                                                     */
     /*    _TYPE     = CHAR                                                                                                    */
     /*    _LENGTH   = 1                                                                                                       */
