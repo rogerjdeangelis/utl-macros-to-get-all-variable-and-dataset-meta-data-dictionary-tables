@@ -94,7 +94,7 @@ https://github.com/rogerjdeangelis/utl-wps-meta-data-dictionaries
 /*                                                         |                                 |                              */
 /* SASHELP.VCOLUMN SAS SASHELP.CLASS COLUMN SEX            |%utl_getColumn(sashelp,class,sex)|  MACRO VARIABLES             */
 /* =============================================           |                                 |                              */
-/*                                                         |                                 |  _MEMNAME                    */
+/*                                                         |                                 |  _MEMNAME  = CLASS           */
 /* Variable         Typ    Value        Label              |                                 |  _NAME     = SEX             */
 /*                                                         |                                 |  _TYPE     = CHAR            */
 /* LIBNAME           C8    SASHELP   Library Name          |                                 |  _LENGTH   = 1               */
